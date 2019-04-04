@@ -1,0 +1,17 @@
+if [ -d "/Applications/Emacs.app" ]; then
+   alias edt="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -n"
+   alias emacs=/Applications/Emacs.app/Contents/MacOS/Emacs
+fi
+alias grep="grep --color=auto"
+alias ls="ls -AFG"
+alias purge='rm -f *~ .*~'
+alias glog="git log"
+
+# Work related
+alias god="pushd ~/repos/debesys"
+alias god2="pushd ~/repos/debesys2"
+alias pserv_bm="pushd ~/repos/debesys && sudo ./run price_server -c /etc/debesys/price_server_BITMEX.conf && popd"
+alias psub_bm="sudo ./run price_sub -m 1111 -S XBTUSD -I 1"
+alias run='`git rev-parse --show-toplevel`/run'
+alias ttknife='`git rev-parse --show-toplevel`/run `git rev-parse --show-toplevel`/ttknife'
+alias deploy='`git rev-parse --show-toplevel`/run python2.7 `git rev-parse --show-toplevel`/deploy/chef/scripts/deploy_one_off.py'
