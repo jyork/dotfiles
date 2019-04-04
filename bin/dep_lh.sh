@@ -1,4 +1,4 @@
-# Function to beuild a release mode line handler and deploy
+# Function to build a release mode line handler and deploy
 
 function build_and_deploy_line_handler()
 {
