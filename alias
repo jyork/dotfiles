@@ -10,8 +10,6 @@ alias glog="git log"
 # Work related
 alias god="pushd ~/repos/debesys"
 alias god2="pushd ~/repos/debesys2"
-alias pserv_bm="pushd ~/repos/debesys && sudo ./run price_server -c /etc/debesys/price_server_BITMEX.conf && popd"
-alias psub_bm="sudo ./run price_sub -m 1111 -S XBTUSD -I 1"
 alias run='`git rev-parse --show-toplevel`/run'
 alias ttknife='`git rev-parse --show-toplevel`/run `git rev-parse --show-toplevel`/ttknife'
-alias deploy='`git rev-parse --show-toplevel`/run python2.7 `git rev-parse --show-toplevel`/deploy/chef/scripts/deploy_one_off.py'
+alias edge='./run edgeserver -f -v --srl-config /etc/debesys/srl_config_edgeserver_test.conf --lbm-config /etc/debesys/lbm.conf -c /etc/debesys/'
