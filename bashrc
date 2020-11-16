@@ -14,11 +14,9 @@ fi
 
 export LSCOLORS=GxFxCxDxBxegedabagaced
 
-export APPLEID_USERNAME="Joel.York@trustwave.com"
-export APPLEID_PASSWORD="@keychain:AC_PASSWORD"
-
-if [ -f $HOME/.bashrc.local ]; then
-    . $HOME/.bashrc.local # Read local settings
+if [ -f ${HOME}/.bashrc.local ]; then
+    echo "Reading local file $HOME/.bashrc.local"
+    . ${HOME}/.bashrc.local # Read local settings
 fi
 
 #--------------------------------------------------------------
@@ -345,7 +343,6 @@ alias ..='cd ..'
 
 # Pretty-print of some PATH variables:
 alias path='echo -e ${PATH//:/\\n}'
-Mac
 alias libpath='echo -e ${LD_LIBRARY_PATH//:/\\n}'
 
 
