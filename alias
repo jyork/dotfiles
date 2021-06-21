@@ -6,10 +6,3 @@ alias grep="grep --color=auto"
 alias ls="ls -AFG"
 alias purge='rm -f *~ .*~'
 alias glog="git log"
-
-# Work related
-alias god="pushd ~/repos/debesys"
-alias god2="pushd ~/repos/debesys2"
-alias run='`git rev-parse --show-toplevel`/run'
-alias ttknife='`git rev-parse --show-toplevel`/run `git rev-parse --show-toplevel`/ttknife'
-alias edge='./run edgeserver -f -v --srl-config /etc/debesys/srl_config_edgeserver_test.conf --lbm-config /etc/debesys/lbm.conf -c /etc/debesys/'
