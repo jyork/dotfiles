@@ -1,6 +1,6 @@
 [user]
 	name = Joel York
-	email = joel.york@tradingtechnologies.com
+	email = Joel_York@yahoo.com
 	username = jyork
 [core]
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
@@ -23,8 +23,3 @@
 	untracked = red bold
 [push]
 	default = current
-[git-tt]
-	validate-jira-number = prompt
-	include-jira-summary = true
-	jira-summary-length = 15
-	jira-default-project = DEB
